@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img{
+    max-width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(235, 255, 230);
+    display: grid;
+    place-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.w-card{
+    width: 400px;
+    background-color: rgb(161, 252, 143);
+    padding: 15px;
+    border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.w-card form{
+    display: flex;
+    gap: 10px;
+    position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.w-card form input{
+    padding: 7px;
+    width: 90%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding-left: 40px;
 }
+
+.w-card form button{
+    width: 10%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+} 
+
+.w-card form button.livebtn{
+    position: absolute;
+    height: 100%;
+    padding: 0;
+    display: grid;
+    place-content: center;
+}
+.w-card form button.livebtn img{
+    mix-blend-mode: hard-light;
+
+}
+.w-card form button img{
+    width: 80%;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details .wimg{
+    max-width: 100px;
+}
+
+.details h3{
+    text-align: center;
+}
+
